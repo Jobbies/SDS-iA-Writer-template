@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.joelbews.ia.writer.template.sds</string>
+	<key>CFBundleName</key>
+	<string>SDS</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0.0</string>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>IATemplateDocumentFile</key>
+	<string>document</string>
+	<key>IATemplateFooterHeight</key>
+	<integer>90</integer>
+	<key>IATemplateHeaderHeight</key>
+	<integer>90</integer>
+	<key>IATemplateDescription</key>
+	<string>SDS document style.</string>
+	<key>IATemplateAuthor</key>
+	<string>Joel Bews</string>
+	<key>IATemplateAuthorURL</key>
+	<string>https://joelbews.com</string>
+</dict>
+</plist>
