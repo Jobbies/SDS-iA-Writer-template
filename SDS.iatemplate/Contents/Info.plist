@@ -18,8 +18,14 @@
 	<string>document</string>
 	<key>IATemplateFooterHeight</key>
 	<integer>90</integer>
+	<key>IATemplateFooterFile</key>
+	<string>footer</string>
 	<key>IATemplateHeaderHeight</key>
 	<integer>90</integer>
+	<key>IATemplateHeaderFile</key>
+	<string>header</string>
+	<key>IATemplateTitleFile</key>
+	<string>title</string>
 	<key>IATemplateDescription</key>
 	<string>SDS document style.</string>
 	<key>IATemplateAuthor</key>

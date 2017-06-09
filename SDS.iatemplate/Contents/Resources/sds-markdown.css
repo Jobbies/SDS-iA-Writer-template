@@ -115,8 +115,17 @@
 }
 
 .markdown-body table {
-  border-spacing: 0;
+  table-layout: fixed;
+  width: 100%;
+  border-top: 1px #e6e6e6 solid;
+  border-bottom: 1px #e6e6e6 solid;
   border-collapse: collapse;
+  font-size: calc((15 / 18) * 1rem); /* 0.8333rem = 15px @ font-size: 18px */
+  line-height: calc(24 / 15); /* 1.6 = 24px @ font-size: 15px */
+  font-variant-numeric: tabular-nums;
+  -moz-font-feature-settings: "tnum";
+  -webkit-font-feature-settings: "tnum";
+  font-feature-settings: "tnum";
 }
 
 .markdown-body td,
@@ -172,6 +181,14 @@
 
 .markdown-body blockquote {
   margin: 0;
+}
+
+.markdown-body > ul > li > strong {
+  padding: 2px 5px;
+  margin-right: 8px;
+  background-color: #eee;
+  font-weight: 600;
+  font-size: 0.8em;
 }
 
 .markdown-body ul,
@@ -376,8 +393,9 @@
 }
 
 .markdown-body blockquote {
-  padding: 0 15px;
+  padding: 10px 15px;
   border-left: 4px solid #555555;
+  background: #eee;
 }
 
 .markdown-body blockquote>:first-child {
@@ -408,7 +426,6 @@
 .markdown-body h4,
 .markdown-body h5,
 .markdown-body h6 {
-  margin-top: 1em;
   font-weight: bold;
   line-height: 1.4;
 }
@@ -452,10 +469,11 @@
 }
 
 .markdown-body h2 {
-  padding-bottom: 0.3em;
+  margin-top: 2em;
+  margin-bottom: 0.5em;
   font-size: 1.75em;
   line-height: 1.225;
-  border-bottom: 1px solid #eee;
+  border-bottom: 3px solid;
 }
 
 .markdown-body h2 .anchor {
@@ -496,7 +514,10 @@
   line-height: 1.1;
 }
 
-.markdown-body ul,
+.markdown-body ul {
+  list-style-type: none;
+}
+
 .markdown-body ol {
   padding-left: 2em;
 }
