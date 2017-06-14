@@ -1,0 +1,25 @@
+@media screen {
+  .markdown-body {
+    margin: 0 auto;
+    padding: 0;
+    max-width: calc(980px - 90px);
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .markdown-body {
+    padding: 0 15px;
+  }
+}
+
+@media screen and (min-width: 520px) {
+  .markdown-body {
+    padding: 0 45px;
+  }
+}
+
+@media screen {
+  .markdown-body pre {
+    -webkit-overflow-scrolling: touch;
+  }
+}

@@ -1,0 +1,13 @@
+table{
+  table-layout: fixed;
+  width: 100%;
+  border-top: 1px #e6e6e6 solid;
+  border-bottom: 1px #e6e6e6 solid;
+  border-collapse: collapse;
+  font-size: calc((15 / 18) * 1rem); /* 0.8333rem = 15px @ font-size: 18px */
+  line-height: calc(24 / 15); /* 1.6 = 24px @ font-size: 15px */
+  font-variant-numeric: tabular-nums;
+  -moz-font-feature-settings: "tnum";
+  -webkit-font-feature-settings: "tnum";
+  font-feature-settings: "tnum";
+}

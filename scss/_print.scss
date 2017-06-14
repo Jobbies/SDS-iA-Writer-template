@@ -1,0 +1,10 @@
+@media print {
+  @page {
+    size: A4 portrait;
+  }
+  .markdown-body{
+    margin-left: $print-margin;
+    margin-right: $print-margin;
+    font-size: $print-font-size;
+  }
+}
