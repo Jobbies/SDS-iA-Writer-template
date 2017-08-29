@@ -1,7 +1,15 @@
 .night-mode {
-  background: #1f2932;
+  background: $night-mode-background;
+  //sets the color for the iA-Writer menu
+  color: $night-mode-color;
 
- .markdown-body{
-    color: #ccc;
+  .markdown-body{
+    //Preview text colour
+    color: $night-mode-color;
+
+    a {
+      color: $night-mode-color;
+    }
+
   }
 }

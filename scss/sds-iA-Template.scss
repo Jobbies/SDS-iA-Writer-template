@@ -1,10 +1,16 @@
+@import "ia/normalise";
+@import "ia/core";
 @import "variables";
-@import "print";
 @import "nightmode";
 @import "header";
 @import "footer";
 @import "images";
 @import "screen_padding";
+
+html{
+  background: $html-background-color;
+  color: $html-color;
+}
 
 .markdown-body{
   color: $text-color;
@@ -19,8 +25,13 @@
 
   ul, ol {
     margin-top: 0;
-    -webkit-padding-start: 20px;
+    -webkit-padding-start: $list-padding-start;
     list-style-type: square;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0;
+    page-break-after: avoid;
   }
 
   h1{
@@ -31,15 +42,17 @@
   h2{
     margin-top: 2rem;
     border-bottom: 1px solid;
-  }
-
-  h3{
-    margin-bottom: 0;
+    margin-bottom: 0.5em;
   }
 
   p{
     margin-top: 0;
     page-break-inside: avoid;
   };
+
+  a{
+    color: $text-color;
+    text-decoration: none;
+  }
 
 }
